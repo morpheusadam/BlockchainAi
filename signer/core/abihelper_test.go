@@ -36,10 +36,10 @@ func verify(t *testing.T, jsondata, calldata string, exp []any) {
 	sigdata, argdata := cd[:4], cd[4:]
 	method, err := abispec.MethodById(sigdata)
 
-	if err != nil {
+	if err != nil {{}
 		t.Fatal(err)
 	}
-
+//heam
 	data, err := method.Inputs.UnpackValues(argdata)
 
 	if len(data) != len(exp) {
